@@ -8,6 +8,7 @@ This is a TypeScript React application that was mainly created by Claude AI code
 4. Since Claude is prepared as an expert of ReactJS, TypeScript, and Tailwind CSS, around 350+ lines of React code are generated in a minute.
 5. The result is copied into [App.tsx](./src/App.tsx).
 6. A few issues are found and fixed before the application runs properly. Please refer to the next section [Lessons learned](#lessons-learned) for details.
+7. The web application is deployed as GitHub page at [here](https://walterpak-canada.github.io/job-request-system)
 
 # Lessons learned
 
@@ -92,10 +93,10 @@ The result comes with a few issues. I didn't bother asking Claude to fix them be
 1. Most of the "import" statements are missing. Lucky, I know React and added those statements back quickly.
 2. There are a few "confusing void expression problems" reported by ESLint's TypeScript type checking. They were simply fixed following VS Code's suggestions.
 3. There are animation problems in the toggle buttons. Buttoms were overlapped with each other and animation was wrong. It took me some time to understand the flow design problem before I fixed it.
-4. Footer is missing. I didn't clearly mentioned it in the requirement. That's my fault. I added it back as a custom element.
-5. Refactoring will be needed. Maybe I didn't mention it in the requirement, but all 350+ lines were created in a big chunk React code. A senior developer should have broken it down into custom elements and files for better reusability and maintainability! Claude should have generated the result into multiple sections for me to copy them into files accordingly. But I know I cannot expect too much with free access!
+4. Footer is missing. I didn't clearly mention it in the requirement. That's my fault. I added it back as a custom element.
+5. Refactoring will be needed. Maybe I didn't specify it in the requirement, but all 350+ lines were created in a big chunk of React code. Application architecture and modularization were all missing. A senior developer should have broken it down into custom elements and files for better reusability and maintainability! Claude should have generated the result into multiple sections for me to copy them into files. But I know I cannot expect too much with a free access!
 
-## Performance
+## Performance of Claude
 
 It's a task with simple business requirement of a single page web application. Over 350 lines of code were created in a minute. The result comes with necessary components of modern web application, including:
 
@@ -110,3 +111,5 @@ The application was available for testing in an hour. I learned a lot with Claud
 - Predefined a few job items in the job request list for users to play around with
 - Implemented 'Delete' feature in the job request list
 - Created GitHub repository and GitHub page for the application
+
+**Cheers!**
